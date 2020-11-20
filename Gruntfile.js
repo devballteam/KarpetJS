@@ -84,7 +84,7 @@ module.exports = function (grunt) {
         src: [
           'src/carpet.js'
         ],
-        dest: 'dist/<%= pkg.name %>.js'
+        dest: 'dist/<%= pkg.name %>'
       }
     },
 
@@ -114,7 +114,7 @@ module.exports = function (grunt) {
    * Register available tasks
    */
   grunt.registerTask('default', ['jshint']);
-  grunt.registerTask('dist', ['clean:dist', 'jshint', 'jscs', 'concat', 'uglify']);
+  grunt.registerTask('dist', ['clean:dist', 'jscs', 'concat', 'uglify']);
   grunt.registerTask('test', ['jasmine']);
   grunt.registerTask('dist-dev', ['clean:dist', 'concat', 'uglify']);
   grunt.registerTask('docs', ['clean:docs', 'jsdoc']);
