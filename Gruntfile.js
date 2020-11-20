@@ -84,7 +84,7 @@ module.exports = function (grunt) {
         src: [
           'src/carpet.js'
         ],
-        dest: 'dist/<%= pkg.name %>'
+        dest: 'dist/carpet.js'
       }
     },
 
@@ -95,7 +95,7 @@ module.exports = function (grunt) {
       },
       carpet: {
         src: '<%= concat.carpet.dest %>',
-        dest: 'dist/<%= pkg.name %>.min.js'
+        dest: 'dist/carpet.min.js'
       },
       components: {
         expand: true,
